@@ -1,3 +1,4 @@
+from typing import Callable
 from functools import wraps
 from .errors import TypeAssertionError, InhomogeneousShapeError
 
@@ -24,7 +25,7 @@ def catch_error(func: Callable) -> Callable:
         except TypeAssertionError as e:
             print("Invalid type detected. Error:", e)
             return
-        except InhomogenousShapeError as e:
+        except InhomogeneousShapeError as e:
             print("The face was not a rectangle. Please type in a valid cuboid. Error:", e)
             return
         except Exception as e:
