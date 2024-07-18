@@ -1,0 +1,24 @@
+Count black blocks in a cuboid.
+There are following rules:
+    - Every black block on every face of the cuboid should pierce the cuboid.
+    - The first line of the input should be "w h l",
+      where w is width of the cuboid,
+            h is height of the cuboid,
+        and l is length of the cuboid.
+    - The following input should be
+      - l lines that represent A of the fig
+      - h lines that represent B of the fig
+      - h lines that represent C of the fig
+
+fig:
+      _______  __
+     /|  A  /|   |
+    /______/ |   |
+    |C|    | |   | height
+    | |_B__|_| __|
+    |/_____|/ __/ length
+
+    |______|
+     width
+
+A nice ASCII art, isn't it?
